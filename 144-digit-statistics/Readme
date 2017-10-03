@@ -1,0 +1,29 @@
+Challenge Description:
+
+Given the numbers "a" and "n" find out how many times each digit from zero to
+nine is the last digit of the number in a sequence [ a, a2, a3, ... an-1, an ]
+
+Input sample:
+2 5
+
+Your program should accept as its first argument a path to a filename. Each
+line of input contains two space separated integers "a" and "n" E.g:
+
+Output sample:
+0: 0, 1: 0, 2: 2, 3: 0, 4: 1, 5: 0, 6: 1, 7: 0, 8: 1, 9: 0
+
+For each line of input print out how many times the digits zero, one, two ...
+nine occur as the last digit of numbers in the sequence E.g:
+
+In this example, the sequence consists of numbers 2, 4, 8, 16 and 32. Among the
+last digits, the digit two occurs twice, and each of the digits four, six and
+eight occurs once.
+
+Constraints:
+1 ≤ n ≤ 1 000 000 000 000,
+2 ≤ a ≤ 9 
+
+To run solution, either run the "./test" wrapper shell script, or:
+
+python3 -m doctest digstat.py -v
+
